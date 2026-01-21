@@ -8,7 +8,7 @@ function preload() {
 
 }
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(windowWidth, windowHeight );
     img1 = loadImage("eh.png") ;
   
   s0.play()
@@ -16,10 +16,10 @@ function setup() {
 
 function draw() {
   background("black");
-   image(img1, 0, 0, 175, 400)
+   image(img1, 0, 0, windowWidth/2, windowHeight)
   fill("white")
-  text("Loose yourself was the #1 song on my birthday, December 10th, 2002. Some of its lyrics are still mentioned today and were even more so a few years ago.", 200, 50, 200)
-  textSize(20)
+  text("Loose yourself was the #1 song on my birthday, December 10th, 2002. Some of its lyrics are still mentioned today and were even more so a few years ago.", 800, 500, 300)
+  textSize(30)
 }
 
 function mouseReleased() {
